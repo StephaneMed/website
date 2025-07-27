@@ -358,6 +358,55 @@
             margin: 5px 0;
         }
 
+        .diploma-links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .diploma-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .diploma-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .diploma-item h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .diploma-item p {
+            color: #b8b8b8;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .diploma-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .diploma-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
         .screenshots {
             display: flex;
             gap: 20px;
@@ -450,6 +499,10 @@
                     <span>📍</span>
                     <span>Saint Geniès, 30150</span>
                 </div>
+                <div class="contact-item">
+                    <span>📄</span>
+                    <a href="https://drive.google.com/file/d/1wjsgS6clGoFZkQUg1bs019BaR1QCDQFP/view?usp=sharing" target="_blank" style="color: #667eea; text-decoration: none;">Télécharger mon CV</a>
+                </div>
             </div>
         </header>
 
@@ -518,6 +571,33 @@
                     </ul>
                     <div class="project-buttons">
                         <a href="#" class="project-link" onclick="showProjectDetails('skills')">Voir compétences</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diplomas Section -->
+        <section class="projects">
+            <h2 class="section-title">Diplômes et Certifications</h2>
+            
+            <div class="projects-grid">
+                <!-- Diplomas Card -->
+                <div class="project-card">
+                    <h3 class="project-title">Formation Électrotechnique</h3>
+                    <p class="project-description">
+                        Diplômes officiels de formation en électrotechnique obtenus 
+                        à Saint Jean-Baptiste de la Salle à Avignon.
+                    </p>
+                    <ul class="project-features">
+                        <li><strong>BTS Électrotechnique</strong> - Admis</li>
+                        <li><strong>BAC PRO Électrotechnique</strong> - Admis</li>
+                        <li><strong>CAP + BEP Électrotechnique</strong> - Admis</li>
+                        <li>Formation complète en électrotechnique</li>
+                        <li>Certifications professionnelles</li>
+                        <li>Habilitations électriques</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="#" class="project-link" onclick="showProjectDetails('diplomas')">Voir les diplômes</a>
                     </div>
                 </div>
             </div>
@@ -757,6 +837,71 @@
                     <p>En parallèle de mon activité principale, je développe des applications Android 
                     pour des besoins personnels et professionnels, démontrant ma polyvalence et 
                     ma capacité d'adaptation aux nouvelles technologies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diplomas Details -->
+        <div id="diplomas-details" class="project-details">
+            <div class="details-container">
+                <button class="close-btn" onclick="hideProjectDetails()">×</button>
+                
+                <div class="details-header">
+                    <h2 class="details-title">Diplômes Officiels</h2>
+                    <p class="details-subtitle">Formation Électrotechnique - Saint Jean-Baptiste de la Salle - Avignon</p>
+                </div>
+
+                <div class="details-section">
+                    <h3>🎓 Diplômes Obtenus</h3>
+                    <div class="diploma-links">
+                        <div class="diploma-item">
+                            <h4>BTS Électrotechnique</h4>
+                            <p>Diplôme de Technicien Supérieur - Admis</p>
+                            <a href="https://drive.google.com/file/d/16eyT3dvC4NSXH260lt5xJml5g_8A9CNO/view?usp=sharing" target="_blank" class="diploma-link">
+                                📄 Voir le diplôme
+                            </a>
+                        </div>
+                        
+                        <div class="diploma-item">
+                            <h4>BAC PRO Électrotechnique</h4>
+                            <p>Baccalauréat Professionnel - Admis</p>
+                            <a href="https://drive.google.com/file/d/1qz-PSKnrw5jr85eAI3CyINsSkOkje5ce/view?usp=sharing" target="_blank" class="diploma-link">
+                                📄 Voir le diplôme
+                            </a>
+                        </div>
+                        
+                        <div class="diploma-item">
+                            <h4>Brevet des Collèges</h4>
+                            <p>Diplôme National du Brevet - Admis</p>
+                            <a href="https://drive.google.com/file/d/1U_3qaqWPH0iUSgRGeWRhVB6JnOlADu1q/view?usp=sharing" target="_blank" class="diploma-link">
+                                📄 Voir le diplôme
+                            </a>
+                        </div>
+                        
+                        <div class="diploma-item">
+                            <h4>CAP Électrotechnique</h4>
+                            <p>Certificat d'Aptitude Professionnelle - Admis</p>
+                            <a href="https://drive.google.com/file/d/1AeIUR95Z6-2S3Uz5EdrLXUNAZ9g6fzQk/view?usp=sharing" target="_blank" class="diploma-link">
+                                📄 Voir le diplôme
+                            </a>
+                        </div>
+                        
+                        <div class="diploma-item">
+                            <h4>BEP Électrotechnique</h4>
+                            <p>Brevet d'Études Professionnelles - Admis</p>
+                            <a href="https://drive.google.com/file/d/1YlP7hP1ljLlh1NyfTv2O80w4ciCU1AdM/view?usp=sharing" target="_blank" class="diploma-link">
+                                📄 Voir le diplôme
+                            </a>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+                <div class="details-section">
+                    <h3>⚠️ Protection des Documents</h3>
+                    <p>Tous les diplômes sont protégés par un filigrane "COPIE - NE PAS REPRODUIRE" 
+                    pour garantir leur authenticité et empêcher la duplication non autorisée, les documents originaux sont disponible sur demande.</p>
                 </div>
             </div>
         </div>
