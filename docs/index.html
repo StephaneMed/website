@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stéphane Med - Développeur Android</title>
+    <title>Stéphane Meden - Développeur Android</title>
     <style>
         * {
             margin: 0;
@@ -436,22 +436,96 @@
         <header class="header">
             <img src="https://i.ibb.co/jkjrwQbD/Capture-d-cran-2025-07-27-092518.png" alt="Avatar Stéphane Meden" class="avatar">
             <h1>Stéphane Meden</h1>
-            <p>Développeur Android Passionné</p>
+            <p>Électrotechnicien - 42 ans</p>
             <div class="contact-info">
                 <div class="contact-item">
                     <span>📧</span>
                     <span>stephane.meden@protonmail.com</span>
                 </div>
                 <div class="contact-item">
-                    <span>🔗</span>
-                    <a href="https://stephanemed.github.io/website/" target="_blank" style="color: #667eea; text-decoration: none;">Site Web</a>
+                    <span>📱</span>
+                    <span>+33 6 72 54 32 40</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Saint Geniès, 30150</span>
                 </div>
             </div>
         </header>
 
-        <!-- Projects Section -->
+        <!-- Professional Profile Section -->
         <section class="projects">
-            <h2 class="section-title">Mes Projets Android</h2>
+            <h2 class="section-title">Profil Professionnel</h2>
+            
+            <div class="projects-grid">
+                <!-- About Me -->
+                <div class="project-card">
+                    <h3 class="project-title">À Propos de Moi</h3>
+                    <p class="project-description">
+                        Fort de vingt ans d'expériences dans des domaines électromécaniques, 
+                        plus particulièrement en électricité générale. Je suis de nature curieuse 
+                        et polyvalente, ce qui me permet de pouvoir vérifier, dépanner et installer 
+                        une multitude de systèmes dans des milieux variés.
+                    </p>
+                    <ul class="project-features">
+                        <li>20 ans d'expérience en électromécanique</li>
+                        <li>Spécialisation en électricité générale</li>
+                        <li>Nature curieuse et polyvalente</li>
+                        <li>Capacité d'adaptation à des milieux variés</li>
+                        <li>Permis B (12 points)</li>
+                        <li>GIES 1 & 2 - Habilitable BE/HE C18-510</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="#" class="project-link" onclick="showProjectDetails('profile')">Voir le CV complet</a>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="project-card">
+                    <h3 class="project-title">Expérience Professionnelle</h3>
+                    <p class="project-description">
+                        Contrôleur technique avec 20 ans d'expérience chez Bureau Veritas, 
+                        spécialisé dans l'inspection électrique et ascensoriste. 
+                        Expertise en vérifications périodiques et conformité.
+                    </p>
+                    <ul class="project-features">
+                        <li><strong>Bureau Veritas</strong> - Contrôleur technique (20 ans)</li>
+                        <li>Inspecteur Niveau 2 : Électricité et Ascenseurs</li>
+                        <li>Vérifications périodiques et Consuel</li>
+                        <li>Diagnostic conformité et modernisation</li>
+                        <li>Inspecteur Niveau 1 : Portes et levage</li>
+                        <li>Expérience en bureau d'études et maintenance</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="#" class="project-link" onclick="showProjectDetails('experience')">Détails expérience</a>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="project-card">
+                    <h3 class="project-title">Compétences Techniques</h3>
+                    <p class="project-description">
+                        Maîtrise des outils informatiques et logiciels techniques, 
+                        avec une expertise en développement Android en parallèle.
+                    </p>
+                    <ul class="project-features">
+                        <li><strong>Logiciels techniques :</strong> Caneco, AutoCAD</li>
+                        <li><strong>Bureautique :</strong> Microsoft 365</li>
+                        <li><strong>Création :</strong> Adobe Creative Cloud</li>
+                        <li><strong>Développement :</strong> Kotlin Android, HTML/CSS</li>
+                        <li>Formation : BTS Électrotechnique</li>
+                        <li>Qualités : Rigueur, Ponctualité, Esprit d'équipe</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="#" class="project-link" onclick="showProjectDetails('skills')">Voir compétences</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Projects Section -->
+        <section class="projects">
+            <h2 class="section-title">Compétences Annexes - Développement Android</h2>
             
             <div class="projects-grid">
                                 <!-- ElecCalcInspector -->
@@ -525,6 +599,168 @@
 
         <!-- Project Details Modals -->
         
+        <!-- Professional Profile Details -->
+        <div id="profile-details" class="project-details">
+            <div class="details-container">
+                <button class="close-btn" onclick="hideProjectDetails()">×</button>
+                
+                <div class="details-header">
+                    <h2 class="details-title">CV Complet - Stéphane Meden</h2>
+                    <p class="details-subtitle">Électrotechnicien - 42 ans</p>
+                </div>
+
+                <div class="details-section">
+                    <h3>📋 Informations Personnelles</h3>
+                    <ul class="details-list">
+                        <li><strong>Nom :</strong> MEDEN Stéphane</li>
+                        <li><strong>Âge :</strong> 42 ans</li>
+                        <li><strong>Statut :</strong> Célibataire</li>
+                        <li><strong>Profession :</strong> Électrotechnicien</li>
+                        <li><strong>Permis :</strong> B (12 points)</li>
+                        <li><strong>Habilitations :</strong> GIES 1 & 2, Habilitable BE/HE C18-510</li>
+                    </ul>
+                </div>
+
+                <div class="details-section">
+                    <h3>📞 Contact</h3>
+                    <ul class="details-list">
+                        <li><strong>Téléphone personnel :</strong> +33 6 72 54 32 40</li>
+                        <li><strong>Téléphone professionnel :</strong> +33 6 30 40 88 82</li>
+                        <li><strong>Email :</strong> stephane.meden@protonmail.com</li>
+                        <li><strong>Adresse :</strong> 3 IMP DE L'ATELIER SAINT GENIES, 30150</li>
+                        <li><strong>Site web :</strong> stephanemed.github.io/website</li>
+                    </ul>
+                </div>
+
+                <div class="details-section">
+                    <h3>💼 Qualités Professionnelles</h3>
+                    <ul class="details-list">
+                        <li>Rigueur</li>
+                        <li>Ponctualité</li>
+                        <li>Relationnel</li>
+                        <li>Esprit d'équipe</li>
+                        <li>Polyvalence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Details -->
+        <div id="experience-details" class="project-details">
+            <div class="details-container">
+                <button class="close-btn" onclick="hideProjectDetails()">×</button>
+                
+                <div class="details-header">
+                    <h2 class="details-title">Expérience Professionnelle</h2>
+                    <p class="details-subtitle">20 ans d'expérience en contrôle technique</p>
+                </div>
+
+                <div class="details-section">
+                    <h3>🏢 Bureau Veritas – Avignon / Nîmes</h3>
+                    <p><strong>Contrôleur technique - 20 Ans</strong></p>
+                    
+                    <h4>Inspecteur Niveau 2 : Électricité</h4>
+                    <ul class="details-list">
+                        <li>Vérifications périodiques</li>
+                        <li>Consuel avant mise sous tension</li>
+                        <li>Création de schémas</li>
+                        <li>Vérification initiale HT/BT</li>
+                    </ul>
+
+                    <h4>Inspecteur Niveau 2 : Ascenseurs</h4>
+                    <ul class="details-list">
+                        <li>Loi de Robien et contrôle quinquennal</li>
+                        <li>Diagnostic conformité suite à modernisation</li>
+                        <li>Vérifications périodiques</li>
+                    </ul>
+
+                    <h4>Inspecteur Niveau 1 : Portes, portails et levage</h4>
+                </div>
+
+                <div class="details-section">
+                    <h3>🏗️ SOCIETE SCE - Le Pontet</h3>
+                    <p><strong>Électricien - 1 An</strong></p>
+                    <ul class="details-list">
+                        <li>Bureau d'étude électricité</li>
+                        <li>Tertiaires et industriels</li>
+                        <li>Phase de conception, études et chiffrage</li>
+                    </ul>
+                </div>
+
+                <div class="details-section">
+                    <h3>🏢 GEIQ BTP 84 - Avignon</h3>
+                    <p><strong>Électricien - 1 An</strong></p>
+                    <ul class="details-list">
+                        <li>Réalisation d'habitations collectives</li>
+                        <li>Tertiaires et dépannages divers en bâtiments</li>
+                    </ul>
+                </div>
+
+                <div class="details-section">
+                    <h3>🏥 CLINIQUE RHONE DURANCE - Avignon</h3>
+                    <p><strong>Électricien - 2 Mois</strong></p>
+                    <ul class="details-list">
+                        <li>Dépannage et maintenance d'installations électriques</li>
+                        <li>Milieu médical</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Details -->
+        <div id="skills-details" class="project-details">
+            <div class="details-container">
+                <button class="close-btn" onclick="hideProjectDetails()">×</button>
+                
+                <div class="details-header">
+                    <h2 class="details-title">Compétences Techniques</h2>
+                    <p class="details-subtitle">Logiciels et outils informatiques</p>
+                </div>
+
+                <div class="details-section">
+                    <h3>💻 Compétences Informatiques</h3>
+                    
+                    <h4>Logiciels Techniques</h4>
+                    <div class="tech-stack">
+                        <span class="tech-tag">CANECO</span>
+                        <span class="tech-tag">AUTOCAD</span>
+                    </div>
+
+                    <h4>Bureautique</h4>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MICROSOFT 365</span>
+                    </div>
+
+                    <h4>Création</h4>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ADOBE CREATIVE CLOUD</span>
+                    </div>
+
+                    <h4>Développement</h4>
+                    <div class="tech-stack">
+                        <span class="tech-tag">KOTLIN ANDROID</span>
+                        <span class="tech-tag">HTML & CSS</span>
+                    </div>
+                </div>
+
+                <div class="details-section">
+                    <h3>🎓 Formation</h3>
+                    <ul class="details-list">
+                        <li><strong>BTS ÉLECTROTECHNIQUE</strong> - Admis - ST JB de la Salle - Avignon</li>
+                        <li><strong>BAC PRO ÉLECTROTECHNIQUE</strong> - Admis - ST JB de la Salle - Avignon</li>
+                        <li><strong>CAP + BEP ÉLECTROTECHNIQUE</strong> - Admis - ST JB de la Salle - Avignon</li>
+                    </ul>
+                </div>
+
+                <div class="details-section">
+                    <h3>🔧 Compétences Annexes</h3>
+                    <p>En parallèle de mon activité principale, je développe des applications Android 
+                    pour des besoins personnels et professionnels, démontrant ma polyvalence et 
+                    ma capacité d'adaptation aux nouvelles technologies.</p>
+                </div>
+            </div>
+        </div>
+
         <!-- ElecCalcInspector Details -->
         <div id="elecCalc-details" class="project-details">
             <div class="details-container">
